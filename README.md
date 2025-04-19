@@ -1,18 +1,119 @@
-# Team-5
-CyberGuard Innovations
-Pre-Requisites:-
-1.Must Install Bun
-2.Must Install Node.js
+# Team5
+# 🛡️ CyberGuard Innovations — Neucron Wallet & Transaction CLI
 
-To Run:- 
-open terminal in same folder
-1.)Run this command to execute the main function "bun run nec-aut'js".
-2.)Run"bun run bsvdk.js" as they are used to sign transactions and control access to funds.
-3.) "bsvdk.js" is Converts the randomly generated private key into its WIF format. WIF is a standardized format that represents private keys in a shorter, more readable form. It’s commonly used for importing and exporting private keys between wallets.
+A CLI tool built with the [Neucron SDK](https://www.npmjs.com/package/neucron-sdk) to handle authentication, wallet management, and transaction handling securely and efficiently.
 
+> 🔐 **Project by Team 5 (CyberGuard Innovations)**  
+> ⚙️ Built with Bun + Node.js
 
-Thank You,
- Feel free to give feedback.
+---
 
+## ⚙️ Pre-Requisites
 
--Team 5(CyberGuard Innovations)
+Make sure the following tools are installed before running this project:
+
+1. ✅ [**Bun**](https://bun.sh/docs/installation)  
+2. ✅ [**Node.js**](https://nodejs.org/)
+
+---
+
+## 🚀 How to Run
+
+Open your terminal in the root folder of this project and execute the following commands:
+
+### ▶️ Main Function Execution
+
+```bash
+bun run nec-aut.js
+```
+
+This handles:
+
+- ✅ Authentication (Sign Up/Login)
+- ✅ Wallet management
+- ✅ Transactions (send funds)
+- ✅ Wallet creation and history lookup
+
+---
+
+### 🔐 Transaction Signing & WIF Conversion
+
+```bash
+bun run bsvdk.js
+```
+
+This file is responsible for:
+
+- 🔑 Signing transactions securely  
+- 🔁 Converting private keys to **WIF (Wallet Import Format)** — a standard used to represent and transfer private keys across wallets.
+
+---
+
+## 🧑‍💻 What It Does
+
+Using `nec-aut.js`, you can:
+
+- 🔐 Sign up or log in to Neucron-powered wallets
+- 💼 Fetch wallet keys, balances, addresses
+- 💸 Send transactions to any address
+- 🧾 View wallet transaction history
+- 🪙 Create a new wallet and fetch:
+  - Balance
+  - Addresses
+  - Mnemonic
+  - All UTXOs
+  - Extended Public Keys (xPub)
+
+---
+
+## 💡 Sample Prompts
+
+```
+Do you want to sign up (s) or login (l)? 
+Enter your wallet ID:
+Enter transaction address:
+Enter transaction note:
+Enter transaction amount:
+```
+
+---
+
+## 📂 Project Structure
+
+```
+cyberguard-cli/
+├── nec-aut.js    # Main script for wallet & transaction logic
+├── bsvdk.js      # Key signing & WIF conversion
+├── package.json
+└── README.md     # You're here!
+```
+
+---
+
+## 🛠 Tech Stack
+
+- [Neucron SDK](https://www.npmjs.com/package/neucron-sdk)
+- [Bun Runtime](https://bun.sh/)
+- Node.js
+- ESModules & Readline interface
+
+---
+
+## 📣 Feedback Welcome!
+
+We’re always looking to improve.  
+Feel free to open an issue or pull request with suggestions!
+
+---
+
+## 🙌 Team
+
+**Team 5 — CyberGuard Innovations**  
+🔐 Building secure, privacy-focused CLI tools for modern blockchain environments.
+
+---
+
+## 📝 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
